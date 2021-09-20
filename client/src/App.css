@@ -1,0 +1,162 @@
+html, html * {
+  font-family: "Arial";
+  scroll-behavior: smooth;
+}
+
+/* Navbar Styles */
+.navbar-transparent {
+  background: #0001;
+}
+
+.nav-ribbon {
+  height: 4px;
+  background: linear-gradient(to right, #102770, #1297E0);
+  width: 0;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.nav-link {
+  background: transparent;
+  border: solid 1px transparent;
+  border-radius: 8px;
+  margin: 0 4px;
+  padding: 4px;
+  cursor: pointer;
+}
+
+.nav-link:hover {
+  border: solid 1px #102770;
+}
+
+.heading-divider {
+  width: 256px;
+  height: 8px;
+  border-radius: 4px;
+  margin: 16px;
+  background: linear-gradient(to right, #1E003D, #102770);
+}
+
+.heading-divider-light {
+  width: 256px;
+  height: 6px;
+  border-radius: 4px;
+  margin: 32px;
+  background: #fff;
+}
+
+.card {
+  height: 90%;
+}
+
+#home {
+  background: url("images/ecommerce1.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Login, Signup, Verify */
+.auth-forms {
+  width: 100%;
+  min-height: 100vh;
+  background: radial-gradient(farthest-corner at 0px 0px, #102770, #1c0038);
+}
+
+.auth-forms>div>div>div {
+  background: #0004;
+}
+
+.auth-forms input[type="text"], .auth-forms input[type="password"] {
+  background: #fff2;
+  border: none;
+  transition: .2s;
+}
+
+.auth-forms input[type="text"]:focus, .auth-forms input[type="password"]:focus {
+  background: #0004;
+  box-shadow: none;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  height: 100vh;
+  width: 256px;
+  /* background: radial-gradient(farthest-corner at 0px 0px, #102770, #1c0038); */
+  background: #102770;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 19px, rgba(0, 0, 0, 0.22) 0px 4px 6px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.sidebar a, .sidebar button {
+  border: none;
+  background: transparent;
+  color: #fff;
+}
+
+.sidebar a:hover, .sidebar button:hover {
+  background: #fff4;
+}
+
+.content {
+  padding-top: 16px;
+  margin-left: 256px;
+  min-height: 100vh;
+}
+
+@media screen and (max-width: 1199px) {
+  .sidebar {
+    transform: translateX(-256px);
+  }
+
+  .content {
+    margin-left: 0;
+  }
+}
+
+.circular-image {
+  background: #fff;
+  width: 156px;
+  height: 156px;
+  border: solid 2px #fff;
+  border-radius: 78px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin: 16px;
+}
+
+.circular-image img {
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.uploaded-image {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  width: 216px;
+  height: 216px;
+  border: solid 1px #0005;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.uploaded-image img {
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}

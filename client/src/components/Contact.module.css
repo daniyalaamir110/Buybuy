@@ -1,0 +1,23 @@
+.contact {
+  background: radial-gradient(farthest-corner at 0px 0px, #102770, #1c0038);
+}
+
+.contact ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.contact p, .contact li, .contact li a {
+  color: #fff6;
+}
+
+.contact li a {
+  border: solid 1px transparent;
+  border-radius: 8px;
+  padding: 2px;
+}
+
+.contact li a:hover {
+  color: #fff;
+  border-color: #fff;
+}
